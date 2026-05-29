@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head><script async src="https://www.googletagmanager.com/gtag/js?id=G-5X3YTRQKEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5X3YTRQKEM'); gtag('config', 'AW-17858845316');
+
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Strong and Flexible</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <style> body { font-family: 'Inter', sans-serif; } </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header x-data="{ open: false }" class="bg-slate-800/90 backdrop-blur-lg sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html">
+            <img src="images/logo.svg" alt="Strong and Flexible Logo" class="h-16">
+        </a>
+
+        <nav class="hidden md:flex items-center">
+            <a href="index.html" class="text-slate-300 hover:text-white px-4 transition-colors">Home</a>
+            <a href="services.html" class="text-slate-300 hover:text-white px-4 transition-colors">Services</a>
+            <a href="about.html" class="text-white font-bold px-4 transition-colors">About</a>
+            <a href="contact.html" class="bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors shadow">Book Now</a>
+        </nav>
+
+        <button @click="open = !open" class="md:hidden text-white w-10 h-10 relative focus:outline-none">
+            <span class="sr-only">Open main menu</span>
+            <div class="block w-8 absolute left-1 top-1/2 -translate-y-1/2 transform transition-all duration-300">
+                <span :class="{'rotate-45 translate-y-2': open, 'opacity-100': !open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
+                <span :class="{'opacity-0': open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
+                <span :class="{'-rotate-45 -translate-y-2': open, 'opacity-100': !open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
+            </div>
+        </button>
+    </div>
+
+    <div x-show="open" @click.away="open = false" class="md:hidden bg-slate-800"
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform -translate-y-4"
+         x-transition:enter-end="opacity-100 transform translate-y-0"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform translate-y-0"
+         x-transition:leave-end="opacity-0 transform -translate-y-4">
+        
+        <nav class="flex flex-col items-center py-4 space-y-4">
+            <a href="index.html" class="text-slate-300 hover:text-white text-lg px-4 transition-colors">Home</a>
+            <a href="services.html" class="text-slate-300 hover:text-white text-lg px-4 transition-colors">Services</a>
+            <a href="about.html" class="text-white font-bold text-lg px-4 transition-colors">About</a>
+            <a href="contact.html" class="bg-purple-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-purple-700 transition-colors shadow">Book Now</a>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-slate-900">My Philosophy: A Search for Answers</h1>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <img src="images/headshot.jpeg" alt="Ireneusz Bialek" class="rounded-full shadow-lg mx-auto w-64 h-64 object-cover">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h2 class="text-3xl font-bold text-slate-900 mb-4">Ireneusz Bialek</h2>
+                        <p class="text-slate-600 mb-4">
+                            My approach is born from necessity. After competetive skydiving in the military, training martial arts, rock climbing, running ultra-marathon and getting injured a lot, I realized. Standard, one-size-fits-all rehab protocols were failing to address the root cause of chronic pain—they were merely managing symptoms.
+                        </p>
+                        <p class="text-slate-600 mb-4">
+                            This led me on a multi-disciplinary quest for a better answer. I studied Pilates, Osteopathic techniques, Yoga, and Clinical Massage, eventually finding the 'missing link' in <strong>Anatomy in Motion (AiM)</strong>. This methodology revealed that the true root cause often starts with our foundation: the foot and gait mechanics.
+                        </p>
+                        <p class="text-slate-600 mb-6">
+                            I don't offer generic workouts. I provide a deep forensic analysis of your body's unique mechanics, using Pilates equipment for neurological feedback and modern strength principles to re-educate your system and build lasting resilience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="studio" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6">
+                 <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="images/studio.jpeg" alt="Pilates Studio in Liverpool Street" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold text-slate-900 mb-4">Your Private Studio in Central London</h2>
+                        <p class="text-slate-600 mb-4">My fully-equipped studio is conveniently located near Liverpool Street, providing a calm, focused, and private environment for your sessions.</p>
+                        <p class="text-slate-600 font-semibold mb-2">Studio Equipment:</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-1">
+                            <li>Pilates Reformer</li>
+                            <li>Wunda Chair</li>
+                            <li>Fuse Ladder & Half-Cadillac</li>
+                            <li>Gymnastics Rings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-16 bg-white border-t border-slate-200">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-slate-900 mb-6">Ready to find the root cause?</h2>
+                <a href="contact.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-purple-700 transition-transform transform hover:scale-105 shadow-lg">Book Diagnostic Assessment</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800 text-slate-300 py-12">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+        
+        <div class="mb-6 md:mb-0">
+            <p class="font-bold text-white mb-2">Strong & Flexible</p>
+            <p class="text-sm">14 Devonshire Row, Second Floor, London, EC2M 4RH</p>
+            <p class="text-sm mt-1">
+                <a href="tel:07841405746" class="hover:text-white">07841 405 746</a> |
+                <a href="mailto:irek@strongandflexible.co.uk" class="hover:text-white">irek@strongandflexible.co.uk</a>
+            </p>
+            <div class="mt-4">
+                 <a href="https://share.google/OTiGuSLxEu4HEVm" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-400 hover:text-white">View on Google Business</a>
+            </div>
+            <p class="text-xs text-slate-400 mt-6">&copy; 2025 Strong and Flexible. All Rights Reserved.</p>
+        </div>
+        
+        <div class="md:ml-8">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Strong and Flexible Logo" class="h-16 opacity-80 hover:opacity-100 transition-opacity">
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
