@@ -11,7 +11,8 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strong and Flexible | Movement Rehabilitation & Performance</title>
+    <title>Biomechanics Clinic London | Strong and Flexible</title>
+    <meta name="description" content="Expert movement coaching, biomechanics and personalised rehabilitation in London. Improve strength, mobility and performance with tailored one-to-one sessions.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <style>
+        [x-cloak] { display: none !important; }
         body { font-family: 'Inter', sans-serif; }
         .hero-bg {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/banner.jpeg');
@@ -52,7 +54,7 @@
         </button>
     </div>
 
-    <div x-show="open" @click.away="open = false" class="md:hidden bg-slate-800"
+    <div x-cloak x-show="open" @click.away="open = false" class="md:hidden bg-slate-800"
          x-transition:enter="transition ease-out duration-200"
          x-transition:enter-start="opacity-0 transform -translate-y-4"
          x-transition:enter-end="opacity-100 transform translate-y-0"
@@ -70,49 +72,85 @@
 </header>
 
     <main>
-        <section class="hero-bg h-[60vh] flex items-center text-white">
-            <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Reclaim Your Body's Potential</h1>
-                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-                    Stop guessing and identify the root cause. This clinical assessment uses Gait Analysis and Anatomy in Motion (AiM) to map your movement mechanics, pinpoint the origin of your pain, and build a precise roadmap for your recovery.
-                </p>
-                <a href="https://app.acuityscheduling.com/schedule.php?owner=31586240&appointmentType=61570572" target="_blank" rel="noopener noreferrer" class="bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-transform transform hover:scale-105">Book Diagnostic Assessment (£95)</a>
-            </div>
-        </section>
-
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Beyond Symptoms. A Deeper System.</h2>
-                <p class="max-w-3xl mx-auto text-slate-600 mb-12">
-                    Traditional rehab often treats the symptom. I go deeper. My multi-modal system is the result of a 20-year obsession with solving complex movement problems.
-                    <br><br>
-                    I integrate the precision of clinical Pilates, the structure of strength & conditioning, and the deep, root-cause analysis of advanced gait mechanics. This isn't a generic workout. It is a systematic process of neuromuscular re-education, designed to:
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Identify & Retrain</h3>
-                        <p class="text-slate-600">Solve faulty movement patterns that lead to chronic pain and plateaus.</p>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Build True Stability</h3>
-                        <p class="text-slate-600">Gain genuine control, especially for hypermobile or unstable joints.</p>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Create Lasting Results</h3>
-                        <p class="text-slate-600">Build a resilient body that adapts and performs efficiently.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-20 bg-slate-100">
-            <div class="container mx-auto px-6">
-                
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Trusted by Clients, Proven by Results</h2>
-                    <p class="max-w-3xl mx-auto text-lg text-slate-600">I'm proud of the results my clients achieve and the trust they place in me. Here's what they have to say.</p>
-                </div>
-
+<section class="hero-bg text-white py-16 md:py-20"><div class="container mx-auto px-6 max-w-5xl">
+<h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">Biomechanics, Movement Coaching &amp; Rehabilitation in London</h1>
+<p class="text-base leading-relaxed mb-5">Discover a personalised approach to movement, rehabilitation, and performance at Strong and Flexible. I specialise in identifying movement inefficiencies and helping people understand the root causes of pain, recurring injuries, and physical limitations through advanced biomechanics, gait analysis, and movement re-education.</p>
+<p class="text-base leading-relaxed mb-5">Whether you&#x27;re struggling with chronic pain, recurring injuries, hypermobility, or movement restrictions that traditional approaches haven’t solved, my goal is to help your body move more efficiently, confidently, and with less effort.</p>
+<p class="text-base leading-relaxed mb-5">My approach is not only focused on rehabilitation, but also on optimising biomechanics, improving strength and mobility, enhancing athletic performance, and helping active individuals prevent future injuries through better movement strategies. </p>
+<p class="mt-8 mb-4"><a href="https://www.strongandflexible.co.uk/contact.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700">Book Your Assessment</a></p>
+</div></section>
+<section class="bg-white py-16 md:py-20"><div class="container mx-auto px-6 max-w-5xl">
+<h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Personalised Movement Assessment &amp; Rehabilitation in London</h2>
+<p class="text-base leading-relaxed mb-5">At Strong and Flexible, I combine over 10 years of practical experience with advanced movement methodologies including Gait Analysis and Anatomy in Motion (AiM) to assess how your body truly moves in real life, not just how symptoms appear in isolation.</p>
+<p class="text-base leading-relaxed mb-5">My approach focuses on teaching movement awareness through intuitive tactile cueing, hands-on guidance, and evidence-based rehabilitation methods that help your body rediscover more efficient mechanics naturally.</p>
+<p class="text-base leading-relaxed mb-5">Sessions are designed to help you:</p>
+<ul class="list-disc pl-6 space-y-3 mb-6">
+<li>Identify movement patterns contributing to pain, tension, or recurring injury</li>
+<li>Improve joint control, coordination, and movement efficiency</li>
+<li>Develop better proprioception and kinaesthetic awareness</li>
+<li>Build strength and resilience through progressive loading strategies</li>
+<li>Improve neuromuscular control and movement confidence</li>
+<li>Create long-term, sustainable movement solutions rather than temporary symptom relief</li>
+<li>Enhance physical performance, athletic movement quality, and long-term durability for active individuals and athletes </li>
+</ul>
+<p class="text-base leading-relaxed mb-5">This approach is particularly valuable for individuals who feel they haven’t progressed with standard protocol-based rehabilitation, especially hypermobile or neurodivergent clients who often require more individualised movement coaching and tactile feedback.</p>
+</div></section>
+<section class="bg-slate-100 py-16 md:py-20"><div class="container mx-auto px-6 max-w-5xl">
+<h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Bespoke Movement &amp; Rehabilitation Services</h2>
+<p class="text-base leading-relaxed mb-5">Explore personalised sessions tailored to your individual needs and goals.</p>
+<h3 class="text-xl font-bold mt-8 mb-3">Sports Injury Massage</h3>
+<p class="text-base leading-relaxed mb-5">Level 5 Sports &amp; Remedial Massage Therapy combines clinical assessment with advanced hands-on techniques such as Soft Tissue Release, Muscle Energy Techniques, Trigger-Point Therapy, Myofascial Release and Joint Mobilisation to help address musculoskeletal pain, movement dysfunction and injury rehabilitation.</p>
+<h3 class="text-xl font-bold mt-8 mb-3">One-to-One Movement Coaching</h3>
+<p class="text-base leading-relaxed mb-5">Individual sessions focused on movement awareness, coordination, strength development, and improving how your body moves as a whole.</p>
+<h3 class="text-xl font-bold mt-8 mb-3">Comprehensive Movement Assessments</h3>
+<p class="text-base leading-relaxed mb-5">Detailed assessments using biomechanics, gait analysis, and movement observation to identify compensations, inefficiencies, and contributing factors behind pain or dysfunction.</p>
+<h3 class="text-xl font-bold mt-8 mb-3">Root-Cause Rehabilitation</h3>
+<p class="text-base leading-relaxed mb-5">A movement-focused rehabilitation approach aimed at addressing the underlying causes of recurring injuries and persistent discomfort rather than simply managing symptoms.</p>
+<h3 class="text-xl font-bold mt-8 mb-3">Performance &amp; Recovery Sessions</h3>
+<p class="text-base leading-relaxed mb-5">Sessions designed to improve resilience, strength, movement efficiency, and physical performance using modern strength and conditioning principles.</p>
+<p class="mt-8 mb-4"><a href="https://strongandflexible.co.uk/services.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700">Explore My Services</a></p>
+</div></section>
+<section class="bg-white py-16 md:py-20"><div class="container mx-auto px-6 max-w-5xl">
+<h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">A Modern, Evidence-Based Approach to Movement Rehabilitation</h2>
+<p class="text-base leading-relaxed mb-5">My work combines multiple evidence-based disciplines and rehabilitation methods, including:</p>
+<ul class="list-disc pl-6 space-y-3 mb-6">
+<li>Biomechanics &amp; Gait Analysis</li>
+<li>Anatomy in Motion (AiM)</li>
+<li>Strength &amp; Conditioning principles</li>
+<li>Progressive and eccentric loading strategies</li>
+<li>Neuromuscular re-education</li>
+<li>Proprioception and movement awareness training</li>
+<li>Overcoming isometrics</li>
+<li>Movement coaching and tactile cueing techniques</li>
+</ul>
+<p class="text-base leading-relaxed mb-5">Rather than relying on rigid protocols, I adapt sessions to the individual in front of me. Every person moves differently, learns differently, and responds differently to rehabilitation.</p>
+<p class="text-base leading-relaxed mb-5">For many people, simply being shown exercises or given videos to follow is not enough. My approach uses tactile feedback and movement guidance to help your body learn movement patterns in a more intuitive and effective way.</p>
+<p class="text-base leading-relaxed mb-5">Alongside rehabilitation, sessions can also support athletic development, movement optimisation, strength progression, injury prevention, and improved physical performance for active individuals across all levels of training and sport.</p>
+</div></section>
+<section class="bg-slate-100 py-16 md:py-20"><div class="container mx-auto px-6 max-w-5xl">
+<h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Expert Care Across London’s Boroughs</h2>
+<p class="text-base leading-relaxed mb-5">Strong and Flexible supports clients from the City of London, Spitalfields, Islington, Clerkenwell, and surrounding areas.</p>
+<p class="text-base leading-relaxed mb-5">Located at 14 Devonshire Row, Second Floor, London, EC2M 4RH, the studio is conveniently positioned near Liverpool Street Station, making it easily accessible for busy professionals across London.</p>
+</div></section>
+<section class="bg-white py-16 md:py-20"><div class="container mx-auto px-6 max-w-5xl">
+<h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Why Choose Strong and Flexible</h2>
+<p class="text-base leading-relaxed mb-5">Strong and Flexible offers a highly personalised, one-to-one experience focused on helping you better understand your body and movement patterns.</p>
+<p class="text-base leading-relaxed mb-5">Unlike more standardised rehabilitation models, my approach is tailored specifically to the individual, combining movement coaching, hands-on guidance, biomechanics, and modern rehabilitation principles.</p>
+<h3 class="text-xl font-bold mt-8 mb-3">What You Can Expect:</h3>
+<ul class="list-disc pl-6 space-y-3 mb-6">
+<li>Fully personalised movement and rehabilitation sessions</li>
+<li>One-to-one care from an experienced movement coach and therapist</li>
+<li>Guidance from a qualified Pilates instructor, Yoga instructor, Personal Trainer, and Sports &amp; Remedial Massage Therapist currently completing a Master’s Degree in Osteopathy </li>
+<li>A detailed biomechanics-led approach to understanding pain and movement</li>
+<li>Evidence-based strength and conditioning principles integrated into rehabilitation</li>
+<li>A supportive, educational environment focused on long-term progress</li>
+<li>Convenient central London location near Liverpool Street Station</li>
+</ul>
+<p class="mt-8 mb-4"><a href="https://strongandflexible.co.uk/about.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700">Find Out More About Me</a></p>
+</div></section>
+<section class="bg-slate-100 py-16 md:py-20"><div class="container mx-auto px-6 max-w-5xl">
+<h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Helping People Move Better, Feel Stronger &amp; Build Long-Term Resilience</h2>
+<p class="text-base leading-relaxed mb-5">Many clients come to Strong and Flexible after trying multiple approaches without lasting success. By focusing on movement quality, body awareness, and individual mechanics, sessions are designed to help you better understand how your body functions and how to move with greater confidence and efficiency. </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
                     
                     <div class="bg-white p-8 rounded-lg shadow-xl flex flex-col">
@@ -153,8 +191,17 @@
                     <a href="https://share.google/OTiGuSLxXiEu4HEVm" target="_blank" rel="noopener noreferrer" class="bg-yellow-500 text-slate-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition-colors shadow-lg">Read all 35+ 5-Star Reviews on Google</a>
                 </div>
 
-            </div>
-        </section>
+
+</div></section>
+<section class="bg-white py-16 md:py-20"><div class="container mx-auto px-6 max-w-5xl">
+<h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Take the First Step Towards Pain-Free Movement and Strengthen Your Body with Strong and Flexible</h2>
+<p class="text-base leading-relaxed mb-5">Your initial assessment is designed to provide a detailed understanding of how your body moves, what may be contributing to pain or limitations, and what steps can help you move forward.</p>
+<p class="text-base leading-relaxed mb-5">For £95, your session includes a comprehensive movement and biomechanics assessment tailored specifically to your goals and concerns.</p>
+<p class="text-base leading-relaxed mb-5">Whether you’re dealing with recurring injuries, movement limitations, hypermobility, chronic discomfort, or simply want to improve how your body performs, Strong and Flexible offers a personalised approach focused on long-term results.</p>
+<p class="text-base leading-relaxed mb-5">Call: <a href="tel:07841405746" class="underline underline-offset-4 hover:text-purple-500">07841 405 746</a></p>
+<p class="text-base leading-relaxed mb-5">Email: <a href="mailto:irek@strongandflexible.co.uk" class="underline underline-offset-4 hover:text-purple-500">irek@strongandflexible.co.uk</a></p>
+<p class="mt-8 mb-4"><a href="https://strongandflexible.co.uk/contact.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700">Book Now</a></p>
+</div></section>
     </main>
 
     <footer class="bg-slate-800 text-slate-300 py-12">
