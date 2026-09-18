@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5X3YTRQKEM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5X3YTRQKEM');
+        gtag('config', 'AW-17858845316');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-to-One Movement Sessions City of London | Strong &amp; Flexible</title>
+    <meta name="description" content="Personalised one-to-one sessions combining biomechanics, movement coaching &amp; rehabilitation strategies | Book your session today &rarr;">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="header-loader.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <style>
+        [x-cloak] { display: none !important; }
+        body { font-family: 'Inter', sans-serif; }
+        .one-to-one-hero {
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('images/banner.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+<header x-data="{ open: false, servicesOpen: false }" class="bg-slate-800/90 backdrop-blur-lg sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html"><img src="images/logo.svg" alt="Strong and Flexible Logo" class="h-16"></a>
+        <nav class="hidden md:flex items-center" aria-label="Main navigation">
+            <a href="index.html" class="text-slate-300 hover:text-white px-4 transition-colors">Home</a>
+            <div class="relative group">
+                <button type="button" class="text-white font-bold px-4 py-2 transition-colors flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded" aria-haspopup="true">
+                    Services
+                    <svg aria-hidden="true" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.51a.75.75 0 01-1.08 0l-4.25-4.51a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
+                </button>
+                <div class="absolute left-0 top-full pt-2 hidden group-hover:block group-focus-within:block min-w-64">
+                    <div class="bg-slate-800 rounded-lg shadow-xl py-2 border border-slate-700">
+                        <a href="services.html" class="block px-5 py-3 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors">All Services</a>
+                        <a href="movement-assessment.html" class="block px-5 py-3 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors">Movement Assessment</a>
+                        <a href="one-to-one-sessions.html" class="block px-5 py-3 text-white font-bold bg-slate-700 transition-colors" aria-current="page">One-to-One Movement Sessions</a>
+                    </div>
+                </div>
+            </div>
+            <a href="about.html" class="text-slate-300 hover:text-white px-4 transition-colors">About</a>
+            <a href="contact.html" class="bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors shadow">Book Now</a>
+        </nav>
+        <button @click="open = !open" class="md:hidden text-white w-10 h-10 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded" :aria-expanded="open.toString()" aria-controls="mobile-main-menu">
+            <span class="sr-only">Open main menu</span>
+            <div class="block w-8 absolute left-1 top-1/2 -translate-y-1/2 transform transition-all duration-300">
+                <span :class="{'rotate-45 translate-y-2': open, 'opacity-100': !open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
+                <span :class="{'opacity-0': open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
+                <span :class="{'-rotate-45 -translate-y-2': open, 'opacity-100': !open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
+            </div>
+        </button>
+    </div>
+    <div id="mobile-main-menu" x-cloak x-show="open" @click.away="open = false" class="md:hidden bg-slate-800" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 transform -translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-4">
+        <nav class="flex flex-col items-center py-4 space-y-2" aria-label="Mobile navigation">
+            <a href="index.html" class="text-slate-300 hover:text-white text-lg px-4 py-2 transition-colors">Home</a>
+            <button type="button" @click="servicesOpen = !servicesOpen" class="text-white font-bold text-lg px-4 py-2 flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded" :aria-expanded="servicesOpen.toString()" aria-controls="mobile-services-menu">
+                Services
+                <svg aria-hidden="true" class="w-4 h-4 transition-transform" :class="{'rotate-180': servicesOpen}" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.51a.75.75 0 01-1.08 0l-4.25-4.51a.75.75 0 01-1.08 0l-4.25-4.51a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
+            </button>
+            <div id="mobile-services-menu" x-cloak x-show="servicesOpen" class="w-full px-6 pb-2">
+                <div class="bg-slate-900/40 rounded-lg py-2 text-center">
+                    <a href="services.html" class="block text-slate-300 hover:text-white px-4 py-3 transition-colors">All Services</a>
+                    <a href="movement-assessment.html" class="block text-slate-300 hover:text-white px-4 py-3 transition-colors">Movement Assessment</a>
+                    <a href="one-to-one-sessions.html" class="block text-white font-bold px-4 py-3 transition-colors" aria-current="page">One-to-One Movement Sessions</a>
+                </div>
+            </div>
+            <a href="about.html" class="text-slate-300 hover:text-white text-lg px-4 py-2 transition-colors">About</a>
+            <a href="contact.html" class="bg-purple-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-purple-700 transition-colors shadow">Book Now</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="one-to-one-hero text-white py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">One-to-One Movement Sessions In The City Of London Designed Around How You Move</h1>
+            <p class="text-base leading-relaxed mb-5">Your nervous system has spent years hardwiring movement compensations to protect you from pain. A generic exercise sheet won't rewrite that software. No two people move the same way, so no two sessions should look the same.</p>
+            <p class="text-base leading-relaxed mb-5">My One-to-One Movement Sessions in the City of London are designed around your individual movement patterns, goals, lifestyle and physical demands. Whether you are looking to overcome recurring injuries, improve mobility, increase strength, optimise performance or better understand how your body moves, every session is tailored specifically to you.</p>
+            <p class="text-base leading-relaxed mb-5">Rather than following a standardised programme, I use movement coaching, biomechanics, strength development and rehabilitation strategies to help you develop more efficient, adaptable and resilient movement patterns.</p>
+            <p class="text-base leading-relaxed mb-8">For many clients, these sessions provide the next step after a detailed Movement Assessment, allowing us to put assessment findings into practice and create meaningful long-term change.</p>
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=31586240&amp;appointmentType=62873678" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors shadow-lg">Book Your Initial Session</a>
+        </div>
+    </section>
+    <section class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-8">A Personalised Approach To Movement &amp; Performance</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <ul class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 list-none p-0 m-0">
+                    <li class="flex gap-3 bg-slate-50 border border-slate-200 rounded-xl p-4"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center" aria-hidden="true">&#10003;</span><span>One-to-one sessions tailored to your individual needs and goals</span></li>
+                    <li class="flex gap-3 bg-slate-50 border border-slate-200 rounded-xl p-4"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center" aria-hidden="true">&#10003;</span><span>Over 10 years of practical experience working with movement and injury</span></li>
+                    <li class="flex gap-3 bg-slate-50 border border-slate-200 rounded-xl p-4"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center" aria-hidden="true">&#10003;</span><span>Biomechanics-led approach focused on long-term progress</span></li>
+                    <li class="flex gap-3 bg-slate-50 border border-slate-200 rounded-xl p-4"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center" aria-hidden="true">&#10003;</span><span>Suitable for recovery, performance development and injury prevention</span></li>
+                    <li class="flex gap-3 bg-slate-50 border border-slate-200 rounded-xl p-4"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center" aria-hidden="true">&#10003;</span><span>Integrates movement coaching, strength development and rehabilitation principles</span></li>
+                    <li class="flex gap-3 bg-slate-50 border border-slate-200 rounded-xl p-4"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center" aria-hidden="true">&#10003;</span><span>No generic exercise plans or one-size-fits-all programmes</span></li>
+                    <li class="flex gap-3 bg-slate-50 border border-slate-200 rounded-xl p-4"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center" aria-hidden="true">&#10003;</span><span>Private studio near Liverpool Street Station</span></li>
+                    <li class="flex gap-3 bg-slate-50 border border-slate-200 rounded-xl p-4"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center" aria-hidden="true">&#10003;</span><span>Designed to help you move with greater confidence and efficiency</span></li>
+                </ul>
+                <aside class="bg-slate-100 rounded-xl p-6 shadow-sm border border-slate-200">
+                    <a href="contact.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-5 rounded-lg hover:bg-purple-700 transition-colors mb-6">Speak Directly With Me</a>
+                    <p class="text-base leading-relaxed mb-3">Call: <a href="tel:07841405746" class="underline underline-offset-4 hover:text-purple-600">07841 405 746</a></p>
+                    <p class="text-base leading-relaxed">Email: <a href="mailto:irek@strongandflexible.co.uk" class="underline underline-offset-4 hover:text-purple-600 break-words">irek@strongandflexible.co.uk</a></p>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <section class="bg-slate-100 py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Turning Assessment Findings Into Long-Term Progress</h2>
+                    <p class="text-base leading-relaxed mb-5">One-to-One Movement Sessions are personalised sessions that help you improve how your body moves, adapts and performs.</p>
+                    <p class="text-base leading-relaxed mb-5">Rather than focusing on isolated symptoms or individual body parts, these sessions are designed around understanding movement as a connected system.</p>
+                    <p class="text-base leading-relaxed mb-5">Each session builds upon the information gathered through assessment, observation and ongoing feedback, helping create movement strategies that are more efficient, resilient and sustainable.</p>
+                    <p class="text-base leading-relaxed mb-4">Sessions may focus on:</p>
+                    <ul class="list-disc pl-6 space-y-3 mb-6">
+                        <li>Improving movement quality</li><li>Increasing mobility</li><li>Developing strength</li><li>Enhancing athletic performance</li><li>Improving coordination</li><li>Reducing recurring movement-related issues</li><li>Building confidence in movement</li><li>Supporting long-term physical resilience</li>
+                    </ul>
+                    <p class="text-base leading-relaxed mb-8">Every session is adapted to where you are currently and where you want to be.</p>
+                    <a href="movement-assessment.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">See Movement Assessment</a>
+                    <a href="services.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors mt-3 sm:mt-0 sm:ml-3">Explore All Services</a>
+                </div>
+                <div><img src="images/studio.jpeg" alt="Pilates Reformer in the Studio" class="w-full rounded-xl shadow-xl" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">How These Sessions Fit Into The Process</h2>
+            <p class="text-base leading-relaxed mb-5">Many people arrive looking for a quick solution to pain or recurring injuries.</p>
+            <p class="text-base leading-relaxed mb-5">My approach is different.</p>
+            <p class="text-base leading-relaxed mb-8">Rather than treating each issue as an isolated problem, I focus on understanding how your body moves and identifying the factors that may be contributing to the issue in the first place.</p>
+            <p class="text-base leading-relaxed mb-8">The process typically follows three stages:</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><h3 class="text-xl font-bold mb-4">Movement Assessment</h3><p class="text-base leading-relaxed">The assessment helps identify movement patterns, compensations and biomechanical habits that may be influencing how you move, perform and recover.</p></article>
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><h3 class="text-xl font-bold mb-4">Movement Coaching &amp; Development</h3><p class="text-base leading-relaxed">One-to-One Sessions allow us to apply those findings through movement coaching, tactile cueing and practical movement strategies.</p></article>
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><h3 class="text-xl font-bold mb-4">Long-Term Progress</h3><p class="text-base leading-relaxed">Over time, sessions help improve movement awareness, build physical capacity and create more adaptable movement patterns that support long-term confidence and performance.</p></article>
+            </div>
+            <p class="text-base leading-relaxed mt-8">This integrated process helps ensure that every session has purpose and direction.</p>
+        </div>
+    </section>
+    <section class="bg-slate-100 py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">What Happens During A One-to-One Session?</h2>
+            <p class="text-base leading-relaxed mb-10">Every session is guided by your goals, movement history and assessment findings. Depending on your needs, sessions may include a combination of the following:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><h3 class="text-xl font-bold mb-4">Movement Coaching</h3><p class="text-base leading-relaxed mb-5">Movement coaching helps improve awareness, coordination and control.</p><p class="text-base leading-relaxed">Using observation, guided movement and tactile feedback, I help clients better understand how their body responds to movement and load.</p></article>
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><h3 class="text-xl font-bold mb-4">Biomechanics Integration</h3><p class="text-base leading-relaxed mb-5">Biomechanics principles help us understand how force moves through the body and how different areas work together during movement.</p><p class="text-base leading-relaxed">This allows us to develop strategies that support more efficient movement and reduce unnecessary stress on the body.</p></article>
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><h3 class="text-xl font-bold mb-4">Strength Development</h3><p class="text-base leading-relaxed mb-5">Strength plays an important role in both performance and resilience.</p><p class="text-base leading-relaxed">Sessions may incorporate progressive loading, eccentric loading and other evidence-based Strength &amp; Conditioning methods designed to improve physical capacity and movement confidence.</p></article>
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><h3 class="text-xl font-bold mb-4">Mobility Development</h3><p class="text-base leading-relaxed mb-5">Improving mobility is often about improving movement options rather than simply increasing flexibility.</p><p class="text-base leading-relaxed">Sessions may include targeted movement strategies that help develop greater freedom and control through movement.</p></article>
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><h3 class="text-xl font-bold mb-4">Neuromuscular Re-Education</h3><p class="text-base leading-relaxed mb-5">Many recurring issues are influenced by how the nervous system organises movement.</p><p class="text-base leading-relaxed">Through repetition, awareness and movement exploration, sessions help develop more effective movement habits over time.</p></article>
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><h3 class="text-xl font-bold mb-4">Movement Retraining</h3><p class="text-base leading-relaxed">This is where we address the 'Centipede's Dilemma.' When we place you into a biomechanically optimal position, your brain will initially sound an alarm because it feels 'unnatural.' My job is to guide you through that neurological friction until pain-free, efficient movement becomes your new automatic baseline.</p></article>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Who Are These Sessions For?</h2>
+            <p class="text-base leading-relaxed mb-5">One-to-One Movement Sessions are suitable for people with a wide range of goals. You may benefit from ongoing sessions if you:</p>
+            <ul class="list-disc pl-6 space-y-3 mb-6"><li>Experience recurring injuries</li><li>Have chronic pain that repeatedly returns</li><li>Want to improve movement quality</li><li>Are recovering from a setback or injury</li><li>Have hypermobility and movement-related challenges</li><li>Want to increase strength and resilience</li><li>Feel restricted during exercise or sport</li><li>Want to improve mobility and coordination</li><li>Are looking to enhance athletic performance</li><li>Want a more personalised approach than generic exercise programmes</li></ul>
+            <p class="text-base leading-relaxed">Many clients are busy professionals working in the City of London, while others are runners, gym-goers, recreational athletes and individuals looking to move with greater confidence and ease.</p>
+        </div>
+    </section>
+    <section class="bg-slate-100 py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">What Makes My Approach Different?</h2>
+            <p class="text-base leading-relaxed mb-5">My work combines multiple disciplines and methodologies to create sessions that are tailored to the individual rather than a standard protocol.</p>
+            <p class="text-base leading-relaxed mb-4">This includes:</p>
+            <ul class="list-disc pl-6 space-y-3 mb-6"><li>Biomechanics</li><li>Gait Analysis</li><li>Anatomy in Motion (AiM)</li><li>Movement Coaching</li><li>Strength &amp; Conditioning Principles</li><li>Progressive Loading Strategies</li><li>Eccentric Loading</li><li>Neuromuscular Re-Education</li><li>Proprioception Development</li><li>Kinaesthetic Awareness Training</li><li>Overcoming Isometrics</li><li>AiM Wedges to force midfoot yielding and foot pronation/supination</li></ul>
+            <p class="text-base leading-relaxed mb-5">A key part of my approach is movement awareness.</p>
+            <p class="text-base leading-relaxed mb-5">Many people learn movement more effectively through intuitive tactile feedback than through verbal instruction alone. By helping clients better understand how their body responds to movement, sessions become more engaging, meaningful and effective.</p>
+            <a href="about.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">See More About Strong And Flexible</a>
+        </div>
+    </section>
+    <section class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Common Goals Clients Work Towards</h2>
+            <p class="text-base leading-relaxed mb-4">Every client is different, but common goals include:</p>
+            <ul class="list-disc pl-6 space-y-3 mb-6"><li>Reducing recurring injuries</li><li>Improving movement efficiency</li><li>Increasing mobility</li><li>Building strength</li><li>Enhancing sporting performance</li><li>Improving coordination</li><li>Developing greater movement awareness</li><li>Increasing resilience to physical demands</li><li>Returning to activities with confidence</li><li>Supporting long-term physical health and performance</li></ul>
+            <p class="text-base leading-relaxed">The objective is not simply to work harder, but to move better.</p>
+        </div>
+    </section>
+    <section class="bg-slate-100 py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Conveniently Located For Clients Across The City Of London</h2>
+                    <p class="text-base leading-relaxed mb-4">My studio is located at:</p>
+                    <address class="not-italic text-base leading-relaxed mb-5">Strong and Flexible<br>14 Devonshire Row, Second Floor<br>London<br>EC2M 4RH</address>
+                    <p class="text-base leading-relaxed mb-5">Just a short walk from Liverpool Street Station.</p>
+                    <p class="text-base leading-relaxed mb-4">Many clients travel from:</p>
+                    <ul class="list-disc pl-6 grid grid-cols-2 gap-y-2 mb-6"><li>Liverpool Street</li><li>Spitalfields</li><li>Moorgate</li><li>Bank</li><li>Barbican</li><li>Clerkenwell</li><li>Aldgate</li><li>Shoreditch</li><li>Angel</li><li>Islington</li></ul>
+                    <p class="text-base leading-relaxed">The location is ideal for busy professionals and active individuals seeking a more personalised approach to movement, performance and recovery.</p>
+                </div>
+                <div><img src="images/headshot.jpeg" alt="Ireneusz Bialek" class="w-full rounded-xl shadow-xl" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <article><h3 class="text-xl font-bold mb-3">Do I need a Movement Assessment before booking sessions?</h3><p class="text-base leading-relaxed">A Movement Assessment is often the best starting point because it provides a detailed understanding of how your body moves and helps guide future sessions.</p></article>
+                <article><h3 class="text-xl font-bold mb-3">Are these sessions only for people recovering from injuries?</h3><p class="text-base leading-relaxed">No. Many clients attend sessions to improve performance, mobility, strength and movement efficiency.</p></article>
+                <article><h3 class="text-xl font-bold mb-3">Can sessions help with recurring movement issues?</h3><p class="text-base leading-relaxed">Sessions are designed to explore movement patterns and help develop more efficient movement strategies that support long-term progress.</p></article>
+                <article><h3 class="text-xl font-bold mb-3">Will every session be the same?</h3><p class="text-base leading-relaxed">No. Every session is adapted to your goals, progress and movement needs.</p></article>
+                <article><h3 class="text-xl font-bold mb-3">Do you work with athletes?</h3><p class="text-base leading-relaxed">Yes. Sessions are suitable for active individuals and athletes looking to improve performance, movement quality and injury resilience.</p></article>
+            </div>
+        </div>
+    </section>
+    <section class="one-to-one-hero text-white py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Start Building Better Movement Today</h2>
+            <p class="text-base leading-relaxed mb-5">Whether your goal is overcoming recurring injuries, increasing mobility, improving performance or developing greater confidence in movement, One-to-One Movement Sessions provide a structured and personalised path forward.</p>
+            <p class="text-base leading-relaxed mb-8">By combining movement coaching, biomechanics, strength development and rehabilitation strategies, I help clients build more efficient movement patterns that support long-term resilience and performance.</p>
+            <p class="text-base leading-relaxed mb-3">Call: <a href="tel:07841405746" class="underline underline-offset-4 hover:text-purple-200">07841 405 746</a></p>
+            <p class="text-base leading-relaxed mb-8">Email: <a href="mailto:irek@strongandflexible.co.uk" class="underline underline-offset-4 hover:text-purple-200">irek@strongandflexible.co.uk</a></p>
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=31586240&amp;appointmentType=62873678" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors shadow-lg">Book Your First Session</a>
+            <a href="contact.html" class="inline-block bg-white text-slate-800 font-bold py-3 px-6 rounded-lg hover:bg-slate-100 transition-colors shadow-lg mt-3 sm:mt-0 sm:ml-3">Request Expert Guidance</a>
+        </div>
+    </section>
+</main>
+<footer class="bg-slate-800 text-slate-300 py-12">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+        <div class="mb-6 md:mb-0">
+            <p class="font-bold text-white mb-2">Strong &amp; Flexible</p>
+            <p class="text-sm">14 Devonshire Row, Second Floor, London, EC2M 4RH</p>
+            <p class="text-sm mt-1"><a href="tel:07841405746" class="hover:text-white">07841 405 746</a> | <a href="mailto:irek@strongandflexible.co.uk" class="hover:text-white">irek@strongandflexible.co.uk</a></p>
+            <div class="mt-4"><a href="https://share.google/OTiGuSLxXiEu4HEVm" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-400 hover:text-white">View on Google Business</a></div>
+            <p class="text-xs text-slate-400 mt-6">&copy; 2025 Strong and Flexible. All Rights Reserved.</p>
+        </div>
+        <div><a href="contact.html" class="text-slate-300 hover:text-white">Contact Strong and Flexible</a></div>
+    </div>
+</footer>
+</body>
+</html>

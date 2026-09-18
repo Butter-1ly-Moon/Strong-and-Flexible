@@ -1,0 +1,60 @@
+<header x-data="{ open: false, servicesOpen: false }" class="bg-slate-800/90 backdrop-blur-lg sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html">
+            <img src="images/logo.svg" alt="Strong and Flexible Logo" class="h-16">
+        </a>
+
+        <nav class="hidden md:flex items-center" aria-label="Main navigation">
+            <a data-nav-link="index.html" href="index.html" class="text-slate-300 hover:text-white px-4 transition-colors">Home</a>
+
+            <div class="relative group">
+                <button type="button" data-services-button class="text-slate-300 hover:text-white px-4 py-2 transition-colors flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded" aria-haspopup="true">
+                    Services
+                    <svg aria-hidden="true" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.51a.75.75 0 01-1.08 1.04l-4.25-4.51a.75.75 0 01-1.08 0l-4.25-4.51a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div class="absolute left-0 top-full pt-2 hidden group-hover:block group-focus-within:block min-w-64">
+                    <div class="bg-slate-800 rounded-lg shadow-xl py-2 border border-slate-700">
+                        <a data-nav-link="services.html" href="services.html" class="block px-5 py-3 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors">All Services</a>
+                        <a data-nav-link="movement-assessment.html" href="movement-assessment.html" class="block px-5 py-3 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors">Movement Assessment</a>
+                        <a data-nav-link="one-to-one-sessions.html" href="one-to-one-sessions.html" class="block px-5 py-3 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors">One-to-One Movement Sessions</a>
+                    </div>
+                </div>
+            </div>
+
+            <a data-nav-link="about.html" href="about.html" class="text-slate-300 hover:text-white px-4 transition-colors">About</a>
+            <a href="contact.html" class="bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors shadow">Book Now</a>
+        </nav>
+
+        <button @click="open = !open" class="md:hidden text-white w-10 h-10 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded" :aria-expanded="open.toString()" aria-controls="mobile-main-menu">
+            <span class="sr-only">Open main menu</span>
+            <div class="block w-8 absolute left-1 top-1/2 -translate-y-1/2 transform transition-all duration-300">
+                <span :class="{'rotate-45 translate-y-2': open, 'opacity-100': !open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
+                <span :class="{'opacity-0': open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
+                <span :class="{'-rotate-45 -translate-y-2': open, 'opacity-100': !open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
+            </div>
+        </button>
+    </div>
+
+    <div id="mobile-main-menu" x-cloak x-show="open" @click.away="open = false" class="md:hidden bg-slate-800" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 transform -translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-4">
+        <nav class="flex flex-col items-center py-4 space-y-2" aria-label="Mobile navigation">
+            <a data-nav-link="index.html" href="index.html" class="text-slate-300 hover:text-white text-lg px-4 py-2 transition-colors">Home</a>
+            <button type="button" @click="servicesOpen = !servicesOpen" class="text-slate-300 hover:text-white text-lg px-4 py-2 flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded" :aria-expanded="servicesOpen.toString()" aria-controls="mobile-services-menu">
+                Services
+                <svg aria-hidden="true" class="w-4 h-4 transition-transform" :class="{'rotate-180': servicesOpen}" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25-4.51a.75.75 0 01-1.08 0l-4.25-4.51a.75.75 0 01-1.08 0l-4.25-4.51a.75.75 0 01-.02-1.06z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <div id="mobile-services-menu" x-cloak x-show="servicesOpen" class="w-full px-6 pb-2">
+                <div class="bg-slate-900/40 rounded-lg py-2 text-center">
+                    <a data-nav-link="services.html" href="services.html" class="block text-slate-300 hover:text-white px-4 py-3 transition-colors">All Services</a>
+                    <a data-nav-link="movement-assessment.html" href="movement-assessment.html" class="block text-slate-300 hover:text-white px-4 py-3 transition-colors">Movement Assessment</a>
+                    <a data-nav-link="one-to-one-sessions.html" href="one-to-one-sessions.html" class="block text-slate-300 hover:text-white px-4 py-3 transition-colors">One-to-One Movement Sessions</a>
+                </div>
+            </div>
+            <a data-nav-link="about.html" href="about.html" class="text-slate-300 hover:text-white text-lg px-4 py-2 transition-colors">About</a>
+            <a href="contact.html" class="bg-purple-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-purple-700 transition-colors shadow">Book Now</a>
+        </nav>
+    </div>
+</header>
