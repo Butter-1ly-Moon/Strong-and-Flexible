@@ -11,7 +11,8 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Strong and Flexible</title>
+    <title>Movement Specialist | About Strong and Flexible</title>
+    <meta name="description" content="Learn about my journey from military sport to biomechanics &amp; movement coaching | Discover the philosophy behind Strong &amp; Flexible &rarr;">
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="header-loader.js"></script>
@@ -19,7 +20,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <style> body { font-family: 'Inter', sans-serif; } </style>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .about-map {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            display: block;
+        }
+        @media (max-width: 767px) {
+            .about-map { height: 360px; }
+        }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
@@ -28,14 +40,17 @@
     <main>
         <section class="bg-white py-16 md:py-20">
             <div class="container mx-auto px-6 max-w-5xl">
-                <p class="text-sm uppercase tracking-[0.2em] text-purple-600 font-bold mb-4">About Strong &amp; Flexible</p>
-                <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">About Strong and Flexible &amp; My Approach To Movement</h1>
-                <p class="text-base leading-relaxed mb-5">If you're looking for a more personalised approach to movement, rehabilitation and performance, you probably want to understand not just what I do, but why I do it.</p>
-                <p class="text-base leading-relaxed mb-5">Strong and Flexible was built around the belief that every person moves differently, learns differently and responds differently to rehabilitation. Rather than applying the same approach to everyone, I focus on understanding how your body moves as an individual and helping you develop more efficient, confident and resilient movement strategies.</p>
-                <p class="text-base leading-relaxed mb-8">Whether you're dealing with recurring injuries, persistent discomfort, movement limitations or simply looking to improve physical performance, my goal is to help you better understand your body and move with greater confidence.</p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="services.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors text-center">Explore My Services</a>
-                    <a href="contact.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors text-center">Book A Diagnostic Assessment</a>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">About Strong and Flexible &amp; My Approach To Movement</h1>
+                        <p class="text-base leading-relaxed mb-5">If you're looking for a more personalised approach to movement, rehabilitation and performance, you probably want to understand not just what I do, but why I do it.</p>
+                        <p class="text-base leading-relaxed mb-5">Strong and Flexible was built around the belief that every person moves differently, learns differently and responds differently to rehabilitation. Rather than applying the same approach to everyone, I focus on understanding how your body moves as an individual and helping you develop more efficient, confident and resilient movement strategies.</p>
+                        <p class="text-base leading-relaxed mb-8">Whether you're dealing with recurring injuries, persistent discomfort, movement limitations or simply looking to improve physical performance, my goal is to help you better understand your body and move with greater confidence.</p>
+                        <a href="https://strongandflexible.co.uk/services" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors text-center">Explore My Services</a>
+                    </div>
+                    <div>
+                        <img src="images/headshot.jpeg" alt="Ireneusz Bialek" class="block w-full max-w-md rounded-full shadow-xl mx-auto object-cover aspect-square" loading="lazy">
+                    </div>
                 </div>
             </div>
         </section>
@@ -44,7 +59,7 @@
             <div class="container mx-auto px-6 max-w-5xl">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                     <div>
-                        <img src="images/headshot.jpeg" alt="Ireneusz Bialek" class="w-full max-w-md rounded-full shadow-xl mx-auto object-cover aspect-square" loading="lazy">
+                        <img src="images/studio.jpeg" alt="Strong and Flexible studio" class="block w-full rounded-xl shadow-xl" loading="lazy">
                     </div>
                     <div>
                         <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">My Philosophy, A Search For Answers</h2>
@@ -52,7 +67,9 @@
                         <p class="text-base leading-relaxed mb-5">Before becoming a movement coach and rehabilitation specialist, I spent years pushing my body through demanding physical pursuits. I competed in skydiving, served in the military as a paratrooper, trained in martial arts, climbed, ran ultra-marathons and, like many highly active people, accumulated more than my fair share of injuries along the way.</p>
                         <p class="text-base leading-relaxed mb-5">As I moved through different rehabilitation systems, I became increasingly frustrated by what I was seeing. Many approaches seemed focused on managing symptoms rather than understanding why the problem existed in the first place.</p>
                         <p class="text-base leading-relaxed mb-5">That frustration sparked a long-term search for better answers.</p>
-                        <p class="text-base leading-relaxed">I immersed myself in different disciplines, studying Pilates, Osteopathic techniques, Yoga and Clinical Massage while continually searching for a deeper understanding of movement and recovery. Eventually, I discovered Anatomy in Motion (AiM), a methodology developed by Gary Ward that transformed the way I viewed human movement. It helped me understand that the root cause of many issues may not be where symptoms appear. Instead, the answer often lies in how the body moves as a connected system, starting with the feet and gait mechanics.</p>
+                        <p class="text-base leading-relaxed mb-5">I immersed myself in different disciplines, studying Pilates, Osteopathic techniques, Yoga and Clinical Massage while continually searching for a deeper understanding of movement and recovery.</p>
+                        <p class="text-base leading-relaxed">Eventually, I discovered Anatomy in Motion (AiM), a methodology developed by Gary Ward that transformed the way I viewed human movement. It helped me understand that the root cause of many issues may not be where symptoms appear. Instead, the answer often lies in how the body moves as a connected system, starting with the feet and gait mechanics.</p>
+                        <p class="text-base leading-relaxed mt-5">That discovery continues to shape the way I work today.</p>
                     </div>
                 </div>
             </div>
@@ -61,16 +78,14 @@
         <section class="bg-white py-16 md:py-20">
             <div class="container mx-auto px-6 max-w-5xl">
                 <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-8">Why Strong And Flexible Exists</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <article class="bg-slate-50 border border-slate-200 rounded-xl p-6 shadow-sm">
-                        <h3 class="text-xl font-bold mb-4">The Gap In The Industry</h3>
-                        <p class="text-base leading-relaxed">I created Strong and Flexible because the rehab and fitness industry is trapped in silos. You will find manual therapists, osteopaths, and chiropractors with amazing palpation skills who don't have a clue about dynamic movement mechanics. You will find excellent Pilates or yoga teachers who don't understand heavy strength training, load management, or endurance. And you have high-level S&amp;C or grappling coaches who don't understand joint biomechanics.</p>
-                    </article>
-                    <article class="bg-slate-50 border border-slate-200 rounded-xl p-6 shadow-sm">
-                        <h3 class="text-xl font-bold mb-4">My Personal Story</h3>
-                        <p class="text-base leading-relaxed">If you look at me today, at 46 years old, doing splits, backbends, and handstands, and regularly sparring in MMA and BJJ with guys half my age, people assume I was born with an elite athletic background. The truth is the exact opposite. I was an undiagnosed autistic and ADHD kid ...</p>
-                    </article>
-                </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">The Gap In The Industry</h3>
+                <p class="text-base leading-relaxed mb-8">I created Strong and Flexible because the rehab and fitness industry is trapped in silos. You will find manual therapists, osteopaths, and chiropractors with amazing palpation skills who don't have a clue about dynamic movement mechanics. You will find excellent Pilates or yoga teachers who don't understand heavy strength training, load management, or endurance. And you have high-level S&amp;C or grappling coaches who don't understand joint biomechanics.</p>
+                <p class="text-base leading-relaxed mb-8">Strong and Flexible exists to combine all of these disciplines. I bridge the gap between deep biomechanics, manual therapy, and heavy strength and conditioning.</p>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">My Personal Story, The 'Why'</h3>
+                <p class="text-base leading-relaxed mb-5">If you look at me today, at 46 years old, doing splits, backbends, and handstands, and regularly sparring in MMA and BJJ with guys half my age, people assume I was born with an elite athletic background. The truth is the exact opposite.</p>
+                <p class="text-base leading-relaxed mb-5">I was an undiagnosed autistic and ADHD kid. I was fussy, highly sensitive, constantly injured, and always in pain. Because of my hypermobility, I was constantly spraining my ankles. I was not a natural athlete. But despite my perceived genetic disadvantages, I had an obsessive curiosity about how the human body works and how it heals.</p>
+                <p class="text-base leading-relaxed mb-5">Instead of accepting a life of pain, I reverse-engineered my own body. I developed deep proprioception and mechanical awareness to turn my disadvantages into an advantage. That curiosity allowed me to become a paratrooper in an elite Polish airborne unit, logging over 500 jumps. It allowed me to rock climb, run ultramarathons, and now train MMA. I am literally getting better and more capable as I age.</p>
+                <p class="text-base leading-relaxed">I built Strong and Flexible to teach people the exact same thing: how to become fiercely aware of their own body, rewire their mechanics, and realize that a perceived physical disadvantage is just a problem waiting to be solved.</p>
             </div>
         </section>
 
@@ -86,9 +101,10 @@
                     <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>Hypermobile individuals</span></li>
                     <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>Neurodivergent clients</span></li>
                     <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>People experiencing recurring injuries or persistent movement challenges</span></li>
-                    <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>People wanting to improve performance or long-term resilience</span></li>
                 </ul>
-                <p class="text-base leading-relaxed">Whatever your starting point, my aim is to help you build more efficient movement strategies that support long-term resilience, confidence and physical capability.</p>
+                <p class="text-base leading-relaxed mb-5">Some clients are looking to improve performance. Others want to better understand recurring issues that have not responded to previous approaches.</p>
+                <p class="text-base leading-relaxed mb-8">Whatever your starting point, my aim is to help you build more efficient movement strategies that support long-term resilience, confidence and physical capability.</p>
+                <a href="https://strongandflexible.co.uk/services" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">View Services</a>
             </div>
         </section>
 
@@ -97,8 +113,9 @@
                 <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">A Different Way Of Looking At Movement</h2>
                 <p class="text-base leading-relaxed mb-5">One of the biggest lessons I learned throughout my own journey is that movement cannot always be reduced to a checklist of exercises or a standard protocol.</p>
                 <p class="text-base leading-relaxed mb-5">Every individual has their own movement history, compensations, habits and physical experiences.</p>
-                <p class="text-base leading-relaxed mb-8">This is why I focus on helping clients understand how their body moves rather than simply telling them what exercises to perform.</p>
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 list-none p-0 m-0">
+                <p class="text-base leading-relaxed mb-5">This is why I focus on helping clients understand how their body moves rather than simply telling them what exercises to perform.</p>
+                <p class="text-base leading-relaxed mb-4">My approach integrates:</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 list-none p-0 m-0 mb-8">
                     <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Biomechanics</li>
                     <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Gait Analysis</li>
                     <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Anatomy in Motion (AiM)</li>
@@ -109,6 +126,12 @@
                     <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Tactile Cueing</li>
                     <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Sports &amp; Remedial Massage Therapy</li>
                 </ul>
+                <p class="text-base leading-relaxed">Rather than generic workouts, I provide a detailed analysis of how your body moves and responds to load, helping you develop movement strategies that are appropriate for your individual needs and goals.</p>
+                <h3 class="text-xl md:text-2xl font-bold mt-10 mb-4">The Biggest Misconception</h3>
+                <p class="text-base leading-relaxed mb-5">The most dangerous misconception in the fitness and rehab industry is confusing interoception with proprioception. People assume that because they can intensely 'feel' their body, they have good body awareness. They are completely wrong.</p>
+                <p class="text-base leading-relaxed mb-5">These two senses operate on entirely different neural pathways. Interoception is your ability to feel internal sensations, like a deep stretch or muscle fatigue. Proprioception is your mechanical awareness of where your body is in three-dimensional space, such as exactly where your weight is distributed over your feet.</p>
+                <p class="text-base leading-relaxed mb-5">I see this constantly with highly sensitive individuals, hypermobile clients, dancers, and even very experienced yoga teachers. They chase extreme stretches to 'connect with their body' because they are highly interoceptive. They feel a lot, so they think they have elite body awareness. But if you ask them to stand still and tell you if their center of mass is shifted over their right heel or their left toes, they have absolutely no idea. They are mechanically blind, but because they feel sensations so strongly, they think they can see.</p>
+                <p class="text-base leading-relaxed">I spend most of my time explaining that just because you feel your body doesn't mean you have awareness of it in space. True proprioception is a mechanical skill. It requires training your brain to feel weight distribution and joint position, not just chasing the sensation of a stretched muscle.</p>
             </div>
         </section>
 
@@ -116,6 +139,7 @@
             <div class="container mx-auto px-6 max-w-5xl">
                 <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">The Qualifications &amp; Experience Behind My Approach</h2>
                 <p class="text-base leading-relaxed mb-8">My work draws on a combination of formal qualifications, practical experience and ongoing education.</p>
+                <p class="text-base leading-relaxed mb-4">This includes:</p>
                 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 list-none p-0 m-0 mb-8">
                     <li class="bg-white border border-slate-200 rounded-lg p-4">Qualified Pilates Instructor</li>
                     <li class="bg-white border border-slate-200 rounded-lg p-4">Qualified Yoga Instructor</li>
@@ -135,6 +159,7 @@
                         <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">My Private Studio Near Liverpool Street</h2>
                         <p class="text-base leading-relaxed mb-5">Strong and Flexible is based at 14 Devonshire Row, London, EC2M 4RH, just a short walk from Liverpool Street Station in the City of London.</p>
                         <p class="text-base leading-relaxed mb-5">The studio provides a calm, private and focused environment where sessions can be tailored entirely to the individual.</p>
+                        <p class="text-base leading-relaxed mb-4">Unlike busy gym environments or larger clinics, the space is designed to support one-to-one movement assessment, rehabilitation and performance coaching.</p>
                         <p class="text-base leading-relaxed mb-4">Studio equipment includes:</p>
                         <ul class="list-disc pl-6 space-y-2 mb-0">
                             <li>Pilates Reformer</li>
@@ -145,7 +170,7 @@
                         </ul>
                     </div>
                     <div>
-                        <img src="images/studio.jpeg" alt="Strong and Flexible studio" class="w-full rounded-xl shadow-xl" loading="lazy">
+                        <img src="images/studio.jpeg" alt="Strong and Flexible studio" class="block w-full rounded-xl shadow-xl" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -154,9 +179,10 @@
         <section class="bg-slate-100 py-16 md:py-20">
             <div class="container mx-auto px-6 max-w-5xl">
                 <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">The Clients I Most Enjoy Helping</h2>
-                <p class="text-base leading-relaxed mb-5">I am most passionate about working with curious, ambitious, and highly committed individuals. The severity of their past injuries doesn't deter me; in fact, the more complex the history, the better.</p>
-                <p class="text-base leading-relaxed mb-8">True rehabilitation is teamwork. I get excited when a client is open-minded enough to finally feel what optimal mechanics actually are. When they experience that moment of feeling their foot flatten, their knee bend, and their upper back extend simultaneously just to shift their weight efficiently, that is when real change happens.</p>
-                <blockquote class="border-l-4 border-purple-600 pl-6 text-lg leading-relaxed italic text-slate-700">My most meaningful success story isn't a professional athlete; it's a 73-year-old retired teacher. After two years of consistent, committed teamwork, she is now executing 20kg Jefferson Curls for sets of 10 and routinely performs split squats, back extensions and reverse hypers.</blockquote>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Who I Am Most Passionate About Helping</h3>
+                <p class="text-base leading-relaxed mb-5">I am most passionate about working with curious, ambitious, and highly committed individuals. The severity of their past injuries doesn't deter me, in fact, the more complex the history, the better. True rehabilitation is teamwork. I get excited when a client is open-minded enough to finally feel what optimal mechanics actually are. When they experience that moment of feeling their foot flatten, their knee bend, and their upper back extend simultaneously just to shift their weight efficiently, that is when real change happens.</p>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">My Most Meaningful Success Story</h3>
+                <p class="text-base leading-relaxed">My most meaningful success story isn't a professional athlete; it’s a 73-year-old retired teacher. She came to me initially because she was diagnosed with near end-stage knee osteoarthritis and wanted to avoid a total knee replacement. After two years of consistent, committed teamwork and finding the exact right entry point for her mechanics, she is now executing 20kg Jefferson Curls for sets of 10. She routinely performs split squats, back extensions, and reverse hypers, movements most people half her age are terrified to attempt. We rarely reach the true limits of our physical capacity because we don't know how to systematically find them. With the right progression and commitment, the human body is incredibly adaptable.</p>
             </div>
         </section>
 
@@ -170,9 +196,21 @@
                     <li class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">Islington</li>
                     <li class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">Clerkenwell</li>
                     <li class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">Shoreditch</li>
-                    <li class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">Liverpool Street</li>
                 </ul>
-                <p class="text-base leading-relaxed">The studio is particularly convenient for professionals working in the City, as well as athletes and active individuals travelling from across London.</p>
+                <p class="text-base leading-relaxed mb-8">The studio is particularly convenient for professionals working in the City, as well as athletes and active individuals travelling from across London.</p>
+                <div class="overflow-hidden rounded-xl shadow-lg border border-slate-200 bg-white">
+                    <iframe
+                        class="about-map"
+                        title="Strong and Flexible location on Google Maps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.511498275178!2d-0.08204795940723407!3d51.517686179198186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d1402246489%3A0x6690a30431d5535d!2sStrong%20and%20Flexible!5e0!3m2!1sen!2suk!4v1789739930419!5m2!1sen!2suk"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                </div>
             </div>
         </section>
 
@@ -181,10 +219,9 @@
                 <h2 class="text-2xl md:text-4xl font-bold leading-tight mb-6">Ready To Learn More About Strong And Flexible?</h2>
                 <p class="text-base leading-relaxed mb-5">If you're looking for a more personalised approach to movement, rehabilitation and performance, I'd be happy to help.</p>
                 <p class="text-base leading-relaxed mb-5">Whether your goal is to improve movement quality, better understand recurring issues, enhance performance or build long-term resilience, every session is tailored to your individual needs.</p>
-                <div class="flex flex-col sm:flex-row gap-4 mt-6">
-                    <a href="tel:07841405746" class="inline-block bg-white text-purple-600 font-bold py-3 px-6 rounded-lg hover:bg-slate-100 transition-colors text-center">Call 07841 405 746</a>
-                    <a href="mailto:irek@strongandflexible.co.uk" class="inline-block bg-white text-purple-600 font-bold py-3 px-6 rounded-lg hover:bg-slate-100 transition-colors text-center">Email Me</a>
-                </div>
+                <p class="text-base leading-relaxed mb-5">Call: <a href="tel:07841405746" class="underline underline-offset-4">07841 405 746</a></p>
+                <p class="text-base leading-relaxed mb-6">Email: <a href="mailto:irek@strongandflexible.co.uk" class="underline underline-offset-4 break-words">irek@strongandflexible.co.uk</a></p>
+                <a href="https://strongandflexible.co.uk/contact" class="inline-block bg-white text-purple-600 font-bold py-3 px-6 rounded-lg hover:bg-slate-100 transition-colors text-center">Book A Diagnostic Assessment</a>
             </div>
         </section>
     </main>
