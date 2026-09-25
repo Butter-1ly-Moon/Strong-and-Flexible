@@ -21,7 +21,7 @@
             }
         });
 
-        if (currentPage === 'services.html' || currentPage === 'movement-assessment.html' || currentPage === 'one-to-one-sessions.html') {
+        if (currentPage === 'services.html' || currentPage === 'movement-assessment.html' || currentPage === 'one-to-one-sessions.html' || currentPage === 'performance-based-recovery-sessions.html') {
             const servicesButton = sharedHeader.querySelector('[data-services-button]');
             servicesButton?.classList.add('text-white', 'font-bold');
             servicesButton?.classList.remove('text-slate-300');

@@ -23,100 +23,170 @@
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header x-data="{ open: false }" class="bg-slate-800/90 backdrop-blur-lg sticky top-0 z-50 shadow-lg">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="index.html">
-            <img src="images/logo.svg" alt="Strong and Flexible Logo" class="h-16">
-        </a>
-
-        <nav class="hidden md:flex items-center">
-            <a href="index.html" class="text-slate-300 hover:text-white px-4 transition-colors">Home</a>
-            <a href="services.html" class="text-slate-300 hover:text-white px-4 transition-colors">Services</a>
-            <a href="about.html" class="text-white font-bold px-4 transition-colors">About</a>
-            <a href="contact.html" class="bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors shadow">Book Now</a>
-        </nav>
-
-        <button @click="open = !open" class="md:hidden text-white w-10 h-10 relative focus:outline-none">
-            <span class="sr-only">Open main menu</span>
-            <div class="block w-8 absolute left-1 top-1/2 -translate-y-1/2 transform transition-all duration-300">
-                <span :class="{'rotate-45 translate-y-2': open, 'opacity-100': !open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
-                <span :class="{'opacity-0': open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
-                <span :class="{'-rotate-45 -translate-y-2': open, 'opacity-100': !open}" class="block absolute h-0.5 w-8 bg-white transform transition duration-300 ease-in-out"></span>
-            </div>
-        </button>
-    </div>
-
-    <div x-show="open" @click.away="open = false" class="md:hidden bg-slate-800"
-         x-transition:enter="transition ease-out duration-200"
-         x-transition:enter-start="opacity-0 transform -translate-y-4"
-         x-transition:enter-end="opacity-100 transform translate-y-0"
-         x-transition:leave="transition ease-in duration-150"
-         x-transition:leave-start="opacity-100 transform translate-y-0"
-         x-transition:leave-end="opacity-0 transform -translate-y-4">
-        
-        <nav class="flex flex-col items-center py-4 space-y-4">
-            <a href="index.html" class="text-slate-300 hover:text-white text-lg px-4 transition-colors">Home</a>
-            <a href="services.html" class="text-slate-300 hover:text-white text-lg px-4 transition-colors">Services</a>
-            <a href="about.html" class="text-white font-bold text-lg px-4 transition-colors">About</a>
-            <a href="contact.html" class="bg-purple-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-purple-700 transition-colors shadow">Book Now</a>
-        </nav>
-    </div>
-</header>
+    <header></header>
 
     <main>
-        <section id="about" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                 <div class="text-center mb-12">
-                    <h1 class="text-4xl font-bold text-slate-900">My Philosophy: A Search for Answers</h1>
+        <section class="bg-white py-16 md:py-20">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <p class="text-sm uppercase tracking-[0.2em] text-purple-600 font-bold mb-4">About Strong &amp; Flexible</p>
+                <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">About Strong and Flexible &amp; My Approach To Movement</h1>
+                <p class="text-base leading-relaxed mb-5">If you're looking for a more personalised approach to movement, rehabilitation and performance, you probably want to understand not just what I do, but why I do it.</p>
+                <p class="text-base leading-relaxed mb-5">Strong and Flexible was built around the belief that every person moves differently, learns differently and responds differently to rehabilitation. Rather than applying the same approach to everyone, I focus on understanding how your body moves as an individual and helping you develop more efficient, confident and resilient movement strategies.</p>
+                <p class="text-base leading-relaxed mb-8">Whether you're dealing with recurring injuries, persistent discomfort, movement limitations or simply looking to improve physical performance, my goal is to help you better understand your body and move with greater confidence.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="services.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors text-center">Explore My Services</a>
+                    <a href="contact.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors text-center">Book A Diagnostic Assessment</a>
                 </div>
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="md:w-1/3">
-                        <img src="images/headshot.jpeg" alt="Ireneusz Bialek" class="rounded-full shadow-lg mx-auto w-64 h-64 object-cover">
+            </div>
+        </section>
+
+        <section class="bg-slate-50 py-16 md:py-20">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <img src="images/headshot.jpeg" alt="Ireneusz Bialek" class="w-full max-w-md rounded-full shadow-xl mx-auto object-cover aspect-square" loading="lazy">
                     </div>
-                    <div class="md:w-2/3">
-                        <h2 class="text-3xl font-bold text-slate-900 mb-4">Ireneusz Bialek</h2>
-                        <p class="text-slate-600 mb-4">
-                            My approach is born from necessity. After competetive skydiving in the military, training martial arts, rock climbing, running ultra-marathon and getting injured a lot, I realized. Standard, one-size-fits-all rehab protocols were failing to address the root cause of chronic pain—they were merely managing symptoms.
-                        </p>
-                        <p class="text-slate-600 mb-4">
-                            This led me on a multi-disciplinary quest for a better answer. I studied Pilates, Osteopathic techniques, Yoga, and Clinical Massage, eventually finding the 'missing link' in <strong>Anatomy in Motion (AiM)</strong>. This methodology revealed that the true root cause often starts with our foundation: the foot and gait mechanics.
-                        </p>
-                        <p class="text-slate-600 mb-6">
-                            I don't offer generic workouts. I provide a deep forensic analysis of your body's unique mechanics, using Pilates equipment for neurological feedback and modern strength principles to re-educate your system and build lasting resilience.
-                        </p>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">My Philosophy, A Search For Answers</h2>
+                        <p class="text-base leading-relaxed mb-5">My approach is born from necessity.</p>
+                        <p class="text-base leading-relaxed mb-5">Before becoming a movement coach and rehabilitation specialist, I spent years pushing my body through demanding physical pursuits. I competed in skydiving, served in the military as a paratrooper, trained in martial arts, climbed, ran ultra-marathons and, like many highly active people, accumulated more than my fair share of injuries along the way.</p>
+                        <p class="text-base leading-relaxed mb-5">As I moved through different rehabilitation systems, I became increasingly frustrated by what I was seeing. Many approaches seemed focused on managing symptoms rather than understanding why the problem existed in the first place.</p>
+                        <p class="text-base leading-relaxed mb-5">That frustration sparked a long-term search for better answers.</p>
+                        <p class="text-base leading-relaxed">I immersed myself in different disciplines, studying Pilates, Osteopathic techniques, Yoga and Clinical Massage while continually searching for a deeper understanding of movement and recovery. Eventually, I discovered Anatomy in Motion (AiM), a methodology developed by Gary Ward that transformed the way I viewed human movement. It helped me understand that the root cause of many issues may not be where symptoms appear. Instead, the answer often lies in how the body moves as a connected system, starting with the feet and gait mechanics.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="studio" class="py-20 bg-slate-50">
-            <div class="container mx-auto px-6">
-                 <div class="flex flex-col md:flex-row-reverse items-center gap-12">
-                    <div class="md:w-1/2">
-                        <img src="images/studio.jpeg" alt="Pilates Studio in Liverpool Street" class="rounded-lg shadow-xl w-full">
-                    </div>
-                    <div class="md:w-1/2">
-                        <h2 class="text-3xl font-bold text-slate-900 mb-4">Your Private Studio in Central London</h2>
-                        <p class="text-slate-600 mb-4">My fully-equipped studio is conveniently located near Liverpool Street, providing a calm, focused, and private environment for your sessions.</p>
-                        <p class="text-slate-600 font-semibold mb-2">Studio Equipment:</p>
-                        <ul class="list-disc list-inside text-slate-600 space-y-1">
+        <section class="bg-white py-16 md:py-20">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-8">Why Strong And Flexible Exists</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <article class="bg-slate-50 border border-slate-200 rounded-xl p-6 shadow-sm">
+                        <h3 class="text-xl font-bold mb-4">The Gap In The Industry</h3>
+                        <p class="text-base leading-relaxed">I created Strong and Flexible because the rehab and fitness industry is trapped in silos. You will find manual therapists, osteopaths, and chiropractors with amazing palpation skills who don't have a clue about dynamic movement mechanics. You will find excellent Pilates or yoga teachers who don't understand heavy strength training, load management, or endurance. And you have high-level S&amp;C or grappling coaches who don't understand joint biomechanics.</p>
+                    </article>
+                    <article class="bg-slate-50 border border-slate-200 rounded-xl p-6 shadow-sm">
+                        <h3 class="text-xl font-bold mb-4">My Personal Story</h3>
+                        <p class="text-base leading-relaxed">If you look at me today, at 46 years old, doing splits, backbends, and handstands, and regularly sparring in MMA and BJJ with guys half my age, people assume I was born with an elite athletic background. The truth is the exact opposite. I was an undiagnosed autistic and ADHD kid ...</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-slate-100 py-16 md:py-20">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">What I Do &amp; Who I Help</h2>
+                <p class="text-base leading-relaxed mb-8">I provide one-to-one movement sessions that combine biomechanics, gait analysis, Anatomy in Motion (AiM), movement coaching, rehabilitation principles and modern strength and conditioning methods.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 list-none p-0 m-0 mb-8">
+                    <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>Professionals working in the City of London</span></li>
+                    <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>Athletes and active individuals</span></li>
+                    <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>Endurance athletes</span></li>
+                    <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>Strength athletes</span></li>
+                    <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>Hypermobile individuals</span></li>
+                    <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>Neurodivergent clients</span></li>
+                    <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>People experiencing recurring injuries or persistent movement challenges</span></li>
+                    <li class="flex gap-3 bg-white border border-slate-200 rounded-xl p-4"><span class="text-purple-600 font-bold" aria-hidden="true">&#10003;</span><span>People wanting to improve performance or long-term resilience</span></li>
+                </ul>
+                <p class="text-base leading-relaxed">Whatever your starting point, my aim is to help you build more efficient movement strategies that support long-term resilience, confidence and physical capability.</p>
+            </div>
+        </section>
+
+        <section class="bg-white py-16 md:py-20">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">A Different Way Of Looking At Movement</h2>
+                <p class="text-base leading-relaxed mb-5">One of the biggest lessons I learned throughout my own journey is that movement cannot always be reduced to a checklist of exercises or a standard protocol.</p>
+                <p class="text-base leading-relaxed mb-5">Every individual has their own movement history, compensations, habits and physical experiences.</p>
+                <p class="text-base leading-relaxed mb-8">This is why I focus on helping clients understand how their body moves rather than simply telling them what exercises to perform.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 list-none p-0 m-0">
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Biomechanics</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Gait Analysis</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Anatomy in Motion (AiM)</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Movement Coaching</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Neuromuscular Re-Education</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Strength &amp; Conditioning Principles</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Progressive Loading Strategies</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Tactile Cueing</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Sports &amp; Remedial Massage Therapy</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-slate-50 py-16 md:py-20">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">The Qualifications &amp; Experience Behind My Approach</h2>
+                <p class="text-base leading-relaxed mb-8">My work draws on a combination of formal qualifications, practical experience and ongoing education.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 list-none p-0 m-0 mb-8">
+                    <li class="bg-white border border-slate-200 rounded-lg p-4">Qualified Pilates Instructor</li>
+                    <li class="bg-white border border-slate-200 rounded-lg p-4">Qualified Yoga Instructor</li>
+                    <li class="bg-white border border-slate-200 rounded-lg p-4">Qualified Personal Trainer</li>
+                    <li class="bg-white border border-slate-200 rounded-lg p-4">Level 5 Sports &amp; Remedial Massage Therapist</li>
+                    <li class="bg-white border border-slate-200 rounded-lg p-4">Anatomy in Motion Practitioner</li>
+                    <li class="bg-white border border-slate-200 rounded-lg p-4">Currently studying towards a Master's Degree in Osteopathy</li>
+                </ul>
+                <p class="text-base leading-relaxed">Alongside these qualifications, I bring over a decade of practical experience working with people who want to improve movement quality, physical performance and long-term resilience.</p>
+            </div>
+        </section>
+
+        <section class="bg-white py-16 md:py-20">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">My Private Studio Near Liverpool Street</h2>
+                        <p class="text-base leading-relaxed mb-5">Strong and Flexible is based at 14 Devonshire Row, London, EC2M 4RH, just a short walk from Liverpool Street Station in the City of London.</p>
+                        <p class="text-base leading-relaxed mb-5">The studio provides a calm, private and focused environment where sessions can be tailored entirely to the individual.</p>
+                        <p class="text-base leading-relaxed mb-4">Studio equipment includes:</p>
+                        <ul class="list-disc pl-6 space-y-2 mb-0">
                             <li>Pilates Reformer</li>
                             <li>Wunda Chair</li>
-                            <li>Fuse Ladder & Half-Cadillac</li>
+                            <li>Fuse Ladder</li>
+                            <li>Half Cadillac</li>
                             <li>Gymnastics Rings</li>
                         </ul>
                     </div>
+                    <div>
+                        <img src="images/studio.jpeg" alt="Strong and Flexible studio" class="w-full rounded-xl shadow-xl" loading="lazy">
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <section class="py-16 bg-white border-t border-slate-200">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-slate-900 mb-6">Ready to find the root cause?</h2>
-                <a href="contact.html" class="inline-block bg-purple-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-purple-700 transition-transform transform hover:scale-105 shadow-lg">Book Diagnostic Assessment</a>
+
+        <section class="bg-slate-100 py-16 md:py-20">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">The Clients I Most Enjoy Helping</h2>
+                <p class="text-base leading-relaxed mb-5">I am most passionate about working with curious, ambitious, and highly committed individuals. The severity of their past injuries doesn't deter me; in fact, the more complex the history, the better.</p>
+                <p class="text-base leading-relaxed mb-8">True rehabilitation is teamwork. I get excited when a client is open-minded enough to finally feel what optimal mechanics actually are. When they experience that moment of feeling their foot flatten, their knee bend, and their upper back extend simultaneously just to shift their weight efficiently, that is when real change happens.</p>
+                <blockquote class="border-l-4 border-purple-600 pl-6 text-lg leading-relaxed italic text-slate-700">My most meaningful success story isn't a professional athlete; it's a 73-year-old retired teacher. After two years of consistent, committed teamwork, she is now executing 20kg Jefferson Curls for sets of 10 and routinely performs split squats, back extensions and reverse hypers.</blockquote>
             </div>
         </section>
 
+        <section class="bg-white py-16 md:py-20">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-2xl md:text-3xl font-bold leading-tight mb-6">Based In The Heart Of The City Of London</h2>
+                <p class="text-base leading-relaxed mb-5">Located near Liverpool Street Station, I regularly work with clients from:</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none p-0 m-0 mb-8">
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">City of London</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">Spitalfields</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">Islington</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">Clerkenwell</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">Shoreditch</li>
+                    <li class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">Liverpool Street</li>
+                </ul>
+                <p class="text-base leading-relaxed">The studio is particularly convenient for professionals working in the City, as well as athletes and active individuals travelling from across London.</p>
+            </div>
+        </section>
+
+        <section class="bg-purple-600 text-white py-16 md:py-20">
+            <div class="container mx-auto px-6 max-w-5xl text-center md:text-left">
+                <h2 class="text-2xl md:text-4xl font-bold leading-tight mb-6">Ready To Learn More About Strong And Flexible?</h2>
+                <p class="text-base leading-relaxed mb-5">If you're looking for a more personalised approach to movement, rehabilitation and performance, I'd be happy to help.</p>
+                <p class="text-base leading-relaxed mb-5">Whether your goal is to improve movement quality, better understand recurring issues, enhance performance or build long-term resilience, every session is tailored to your individual needs.</p>
+                <div class="flex flex-col sm:flex-row gap-4 mt-6">
+                    <a href="tel:07841405746" class="inline-block bg-white text-purple-600 font-bold py-3 px-6 rounded-lg hover:bg-slate-100 transition-colors text-center">Call 07841 405 746</a>
+                    <a href="mailto:irek@strongandflexible.co.uk" class="inline-block bg-white text-purple-600 font-bold py-3 px-6 rounded-lg hover:bg-slate-100 transition-colors text-center">Email Me</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-slate-800 text-slate-300 py-12">
