@@ -13,8 +13,9 @@
         if (!sharedHeader) throw new Error('Shared header markup is empty');
 
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const navPage = currentPage === 'hypermobility-paradox.html' ? 'ask-the-expert.html' : currentPage;
         sharedHeader.querySelectorAll('[data-nav-link]').forEach((link) => {
-            if (link.dataset.navLink === currentPage) {
+            if (link.dataset.navLink === navPage) {
                 link.classList.add('text-white', 'font-bold');
                 link.setAttribute('aria-current', 'page');
                 link.classList.remove('text-slate-300');
