@@ -12,7 +12,8 @@
         const sharedHeader = template.content.firstElementChild;
         if (!sharedHeader) throw new Error('Shared header markup is empty');
 
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const pageName = window.location.pathname.split('/').filter(Boolean).pop() || 'index.html';
+        const currentPage = pageName.includes('.') ? pageName : `${pageName}.html`;
         const navPage = currentPage === 'hypermobility-paradox.html' ? 'ask-the-expert.html' : currentPage;
         sharedHeader.querySelectorAll('[data-nav-link]').forEach((link) => {
             if (link.dataset.navLink === navPage) {
